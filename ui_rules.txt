@@ -1,0 +1,42 @@
+1. DESIGN PHILOSOPHY
+Visual: "Observatory Standard" — the UI draws from the most exacting visual tradition in the instrument series so far: the astronomical observatory and the naval chronometer room. Both were environments of absolute precision — white-painted walls, numbered storage drawers, ruled logbooks, and instruments handled with cotton gloves. The design language is correspondingly pure: the cleanest, most restrained app in the series. Every element justified by function, every spacing decision deliberate to the pixel. Think a high-end Swiss watchmaker's digital catalog crossed with a national observatory's archive system.
+Mood: exacting, hushed, authoritative, glacially precise, collectible-serious.
+Important: No clock face motifs used decoratively, no gear illustrations, no pendulum swing animations. The instruments in this collection were used to test timepieces — they are meta-instruments of the highest order. The UI should carry that second-order seriousness: it is a tool for cataloging tools that measured tools.
+
+2. COLORS
+#F8F8F6 — Main background (observatory white — the purest, coolest background in the series)
+#121210 — Primary text & high-contrast elements (carbon black — neutral, slightly warm, like India ink)
+#FFFFFF — Secondary panels / card surfaces
+#888886 — Secondary text / muted labels (pencil grey, cool and neutral)
+#1B4F72 — Primary accent (meridian blue — the deep ink-blue of a nautical chart, a Greenwich observatory logbook cover, an Admiralty specification sheet. Measured, authoritative, naval)
+#E6E6E4 — Outline / stroke / dividers (observatory rule lines, cool neutral)
+#8B7355 — Secondary accent (chronometer walnut — the color of a marine chronometer's gimballed box, the mahogany drawer of a rating room, aged brass gone warm. For era tags, material indicators, observatory provenance badges)
+#B03A2E — Critical errors only
+Important: Meridian blue is the most restrained primary accent in the series — it should feel like it was chosen by a committee of admirals, not a designer. No warmth, no vibrancy. Walnut brown is informational only — provenance, material, era. The background is the coolest and most neutral in the series: this app has no warmth to spare. Precision is the aesthetic.
+
+3. TYPOGRAPHY
+Display / Headings: Libre Baskerville (weight 700) — the typeface of scientific publishing, naval documentation, and observatory annual reports. At large sizes it carries the institutional authority of the Royal Observatory or the US Naval Observatory. Used for instrument names on detail views and the app title only.
+Body / Descriptions: Source Sans 3 (weight 300–400) — a typeface designed for technical documentation. Neutral, precise, optimized for reading dense information. For all prose: condition notes, observatory history, accuracy ratings.
+Monospace / Identifiers: IBM Plex Mono — for archive codes like CHB-KULLBERG-STAKING-1891-GBR-GREENWICH-003, accuracy ratings (± 0.08 s/day), temperature compensation ranges (−10°C to +40°C), and all structured technical fields.
+Important: Libre Baskerville at 24px and above only — below that it becomes too heavy for the clean surfaces. Source Sans 3 handles everything at reading size. IBM Plex Mono for every field containing a measurement, rating, or code — the numbers must feel laboratory-certified, not typeset.
+
+4. SURFACE & TEXTURE LANGUAGE
+
+Backgrounds: flat observatory white — the flattest, cleanest surface in the series. No grain, no warmth, no variation
+Cards: pure white with a 1px border at #E6E6E4 and 8px corner radius — slightly tighter radius than other apps in the series, reflecting the precision engineering aesthetic
+Balance arc motif: each list card features a small SVG — a minimal equal-arm balance scale rendered as two horizontal lines extending from a central pivot point, with the arms level for instruments in calibrated condition and one arm slightly dipped for instruments requiring attention. The pivot point is rendered as a small filled circle in meridian blue. This is the most minimal motif in the series — a single geometric symbol for weighing and precision.
+Accuracy rating badge: each card shows the instrument's rated accuracy in IBM Plex Mono — ± 0.1 s/day, ± 2 s/week — in a small bordered pill. The defining specification for any timing instrument.
+Photography: instrument photography on pure white — the measuring face, balance arm, or dial assembly centered and forward. Overhead for balance instruments, face-on for timing machines. No props, no context objects.
+Observatory provenance tag: small pill showing the originating institution — Greenwich, USNO, Paris Observatory, Pulkovo — in meridian blue at 10% opacity fill with full blue text
+
+
+5. INTERACTION PRINCIPLES
+
+Transitions: 240–280ms ease-out — the slowest, most deliberate in the series. A chronometer balance settles with absolute patience.
+Selected state: meridian blue left-border (3px) + faint #EEF3F8 background tint on active cards
+Empty states: NO INSTRUMENTS IN THIS BALANCE. in IBM Plex Mono, centered, cool grey — one line, no decoration
+Loading: a thin meridian blue progress bar at screen top — slower than other apps in the series, matching the mood
+Navigation: bottom tab bar — four tabs: Balance, Observatory Map, Logbook, Settings. Active tab in meridian blue.
+Accuracy class filter: a first-class filter chip row — Marine chronometer, Pocket watch, Master clock, Transit instrument, Rating scale — because instrument class determines accuracy expectation and is the primary axis collectors use to compare specimens
+
+Important: The balance scale SVG on each card is the most reductive motif in the entire series — just three lines and a dot. Its power is in its restraint. A level balance in blue means calibrated and complete. A dipped arm means condition issue or incomplete documentation. This should be the most immediately legible card motif in the series precisely because it is the simplest.
