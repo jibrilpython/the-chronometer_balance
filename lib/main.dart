@@ -41,7 +41,7 @@ class MyApp extends ConsumerWidget {
             debugShowCheckedModeBanner: false,
             title: 'The Chronometer Balance',
             theme: appTheme,
-            home: !userProv.firstTimeUser
+            home: userProv.firstTimeUser
                 ? const InitialScreen()
                 : const MainNavigation(),
             routes: {
