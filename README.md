@@ -1,6 +1,7 @@
 # The Chronometer Balance
 
 Description:
+
 The Chronometer Balance is a mobile application for collectors of horological antiquities, historians of precision timekeeping, and keepers of astronomical observatory heritage, dedicated to cataloging the mechanical instruments used to measure and verify the accuracy of marine chronometers and master clocks that have been superseded by GPS-synced time servers and quartz oscillators. 
 Systematize your collection of the tools that "guarded the second"— from heavy brass staking tools and poise scales to specialized depthing tools for gear alignment, from antique watch-timing machines with paper - tape readouts to temperature-compensation testing chambers and astronomical transit telescopes used for stellar time-checks. 
 Create a digital archive of temporal precision by recording the instrument type, maker, accuracy rating, era, and the specific observatory or naval shipyard each specimen served. 
